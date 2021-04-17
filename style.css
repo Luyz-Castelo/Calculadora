@@ -1,0 +1,45 @@
+.container {
+  text-align: center;
+  height: 500px;
+}
+
+.row {
+  height: 50px;
+  width: 500px;
+  margin: 0 auto;
+  border: rgb(0, 0, 0) 2px solid;
+  padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2.5em;
+  background: rgb(211, 211, 211);
+}
+
+.row * {
+  display: flex;
+  flex-direction: column;
+}
+
+.row:first-child {
+  display: block;
+  text-align: right;
+  color: white;
+  background: #555555;
+}
+
+.row:nth-child(2) {
+  background: orange;
+}
+
+.row:nth-child(n) div{
+  width: 125px;
+}
+
+.row:last-of-type {
+  display: block;
+  background: red;
+}
+
+.row:last-of-type  div{
+  width: 500px;
+}
